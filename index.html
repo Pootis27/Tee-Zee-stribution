@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
         <style>
             body {
-                background-image: url(https://img.wallpapersafari.com/desktop/1920/1080/30/13/LrwvIA.jpg);
+                /*background-image: url(mai1.png);*/
+                background-color: darkblue;
                 background-repeat: no-repeat;
-                background-size:cover;
+                background-size: cover;
             }
             .likes {
                 position: absolute;
@@ -18,7 +19,7 @@
                 padding: 10px;
                 backdrop-filter: blur(8px);
                 z-index: 0;
-                }
+            }
             .photos {
                 position: absolute;
                 margin: auto;
@@ -44,7 +45,7 @@
                 z-index: 1;
             }
             .contents {
-                display:grid;
+                display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
             }
             .belowfirst {
@@ -52,40 +53,40 @@
                 color: aliceblue;
             }
             .nav {
-                display:grid;
+                display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
             }
             button {
-                height:40px;
+                height: 40px;
                 border: 0px;
                 background-color: rgba(255, 255, 255, 0.1);
-                color:aliceblue;
+                color: aliceblue;
                 font-size: large;
             }
             #likes {
-                opacity:0;
+                opacity: 0;
                 transition: 0.3s;
             }
             #photos {
-                opacity:0;
+                opacity: 0;
                 transition: 0.3s;
             }
             .second {
                 text-align: center;
-                font-size:large;
-                color:aliceblue;
+                font-size: large;
+                color: aliceblue;
             }
             .buttonss {
-                border-radius:25px;
-                margin:3px;
-                cursor:pointer;
+                border-radius: 25px;
+                margin: 3px;
+                cursor: pointer;
             }
             .contentss {
-                display:grid;
+                display: grid;
                 grid-template-columns: 1.5fr 2fr;
             }
             .contentsss {
-                display:grid;
+                display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             }
             .pictures {
@@ -93,133 +94,299 @@
                 width: 100px;
                 object-fit: cover;
             }
-            </style>
+        </style>
     </head>
-<body>
-<div class="center" id="goingup">
-<div class="nav">
-<button class="buttonss" onclick="Return()">Info</button>
-<button class="buttonss" onclick="goup();likesfade()">Likes</button>
-<button class="buttonss" onclick="goup2();photosfade()">Pictures</button>
-<button class="buttonss" onclick="Discord()">Youtube</button>
-<br>
-</div>
-    <div class="contents">
-        <div class="first">
-            <img src="http://pm1.narvii.com/6347/9c0b1fed5544701c26d4f822c99048216100c730_00.jpg" height="200px" width="200px" style="border-radius:25px;object-fit:cover;object-position: 0% 0%;">
+    <body>
+        <div class="center" id="goingup">
+            <div class="nav">
+                <button class="buttonss" onclick="Return()">Info</button>
+                <button
+                    class="buttonss"
+                    onclick="
+                        goup();
+                        likesfade();
+                    "
+                >
+                    Likes
+                </button>
+                <button
+                    class="buttonss"
+                    onclick="
+                        goup2();
+                        photosfade();
+                    "
+                >
+                    Pictures
+                </button>
+                <button class="buttonss" onclick="Discord()">Youtube</button>
+                <br />
             </div>
-
-            <div class="second">
-                <p>Pootis's Info<br>私はクソオタクです</p>
-            <div style="display:grid;grid-template-columns: 1fr 1fr;">
-                <button style="background-color: rgba(0, 0, 0, 0)"><img style="height:100%;width:40%;cursor:pointer;"src="steamicon.png" onclick="location.href=`https://steamcommunity.com/id/pootispootpootpootis`;"></button>
-                <button style="background-color: rgba(0, 0, 0, 0)"><img style="height:100%;width:40%;cursor:pointer;"src="osuicon.png" onclick="location.href=`https://osu.ppy.sh/users/17302694`;"></button>
-            </div>
+            <div class="contents">
+                <div class="first">
+                    <img
+                        src="tsukiko2.png"
+                        height="200px"
+                        width="200px"
+                        style="
+                            border-radius: 25px;
+                            object-fit: cover;
+                            object-position: 0% 0%;
+                        "
+                    />
                 </div>
 
-        <div class="third">
-            <div style="border:1px solid rgba(255, 255, 255, 0.5);color:aliceblue;">
-                <p>Hobbies | playing games, standing around and being useless, procastinating</p>
-            </div>
-            <div style="border:1px solid rgba(255, 255, 255, 0.5);color:aliceblue;margin-top: 5px;">
-                <p>Waifus: Keqing, Tsukiko Tsutsukakushi, Mai Sakurajima, Ganyu</p>
-            </div>
-        </div>
-        
-    </div>
-</div>
-<div class="likes" id="likes">
-<div class="contentss">
-    <div>
-        <h1 style="margin : 0; padding-top:0;margin-bottom: 0;color:rgb(121, 209, 250);text-decoration: underline;">Likes</h1><br>
-        <p style="color:rgb(255, 255, 255)">Waifus, Minecraft, Genshin,<br> Lazing Around</p>
-    </div>
-    <div>
-        <iframe width="auto" height="auto" src="https://www.youtube.com/embed/aDwGMSh7ak0?autoplay=1?mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-</div>
-</div>
+                <div class="second">
+                    <p>Pootis's Info<br />私はクソオタクです</p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr">
+                        <button style="background-color: rgba(0, 0, 0, 0)">
+                            <img
+                                style="
+                                    height: 100%;
+                                    width: 40%;
+                                    cursor: pointer;
+                                "
+                                src="steamicon.png"
+                                onclick="
+                                    location.href = `https://steamcommunity.com/id/pootispootpootpootis`
+                                "
+                            />
+                        </button>
+                        <button style="background-color: rgba(0, 0, 0, 0)">
+                            <img
+                                style="
+                                    height: 100%;
+                                    width: 40%;
+                                    cursor: pointer;
+                                "
+                                src="osuicon.png"
+                                onclick="
+                                    location.href = `https://osu.ppy.sh/users/17302694`
+                                "
+                            />
+                        </button>
+                    </div>
+                </div>
 
-<div class="photos" id="photos">
-    <div class="contentsss">
-        <div>
-            <img src="tsukiko1.png" height="150px" width="150px" style="border-radius:25px;object-fit:cover;object-position: 0% 0%;">
+                <div class="third">
+                    <div
+                        style="
+                            border: 1px solid rgba(255, 255, 255, 0.5);
+                            color: aliceblue;
+                        "
+                    >
+                        <p>
+                            Hobbies | playing games, standing around and being
+                            useless, procastinating
+                        </p>
+                    </div>
+                    <div
+                        style="
+                            border: 1px solid rgba(255, 255, 255, 0.5);
+                            color: aliceblue;
+                            margin-top: 5px;
+                        "
+                    >
+                        <p>
+                            Waifus: Keqing, Tsukiko Tsutsukakushi, Mai
+                            Sakurajima, Ganyu
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="https://cdn.donmai.us/sample/ac/09/__keqing_genshin_impact_drawn_by_tikoo_616__sample-ac093d4893e85ae0f7e9a829c321b598.jpg" height="150px" width="150px" style="border-radius:25px;object-fit:cover;object-position: 50% 0%;">
+        <div class="likes" id="likes">
+            <div class="contentss">
+                <div>
+                    <h1
+                        style="
+                            margin: 0;
+                            padding-top: 0;
+                            margin-bottom: 0;
+                            color: rgb(121, 209, 250);
+                            text-decoration: underline;
+                        "
+                    >
+                        Likes
+                    </h1>
+                    <br />
+                    <p style="color: rgb(255, 255, 255)">
+                        Waifus, Minecraft, Genshin,<br />
+                        Lazing Around
+                    </p>
+                </div>
+                <div>
+                    <iframe
+                        width="auto"
+                        height="auto"
+                        src="https://www.youtube.com/embed/aDwGMSh7ak0?autoplay=1?mute=1"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="
+                            accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                        "
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="mai1.png" height="150px" width="150px" style="border-radius:25px;object-fit:cover;object-position: 50% 0%;">
+
+        <div class="photos" id="photos">
+            <div class="contentsss">
+                <div>
+                    <img
+                        src="tsukiko1.png"
+                        height="150px"
+                        width="150px"
+                        style="
+                            border-radius: 25px;
+                            object-fit: cover;
+                            object-position: 0% 0%;
+                        "
+                    />
+                </div>
+                <div>
+                    <img
+                        src="https://cdn.donmai.us/sample/ac/09/__keqing_genshin_impact_drawn_by_tikoo_616__sample-ac093d4893e85ae0f7e9a829c321b598.jpg"
+                        height="150px"
+                        width="150px"
+                        style="
+                            border-radius: 25px;
+                            object-fit: cover;
+                            object-position: 50% 0%;
+                        "
+                    />
+                </div>
+                <div>
+                    <img
+                        src="mai1.png"
+                        height="150px"
+                        width="150px"
+                        style="
+                            border-radius: 25px;
+                            object-fit: cover;
+                            object-position: 50% 0%;
+                        "
+                    />
+                </div>
+                <div>
+                    <img
+                        src="https://cdn.donmai.us/sample/bc/e4/__keqing_and_keqing_genshin_impact_drawn_by_pdxen__sample-bce469a9f6262cb0a42a874a9999838d.jpg"
+                        height="150px"
+                        width="150px"
+                        style="
+                            border-radius: 25px;
+                            object-fit: cover;
+                            object-position: 0% 10%;
+                        "
+                    />
+                </div>
+                <div>
+                    <img
+                        src="tsukiko2.png"
+                        height="150px"
+                        width="150px"
+                        style="
+                            border-radius: 25px;
+                            object-fit: cover;
+                            object-position: 0% 10%;
+                        "
+                    />
+                </div>
+                <div>
+                    <img
+                        src="https://cdn.donmai.us/sample/15/43/__keqing_and_keqing_genshin_impact_drawn_by_doham__sample-154333d543f9cbb184e1df356296935a.jpg"
+                        height="150px"
+                        width="150px"
+                        style="
+                            border-radius: 25px;
+                            object-fit: cover;
+                            object-position: 0% 10%;
+                        "
+                    />
+                </div>
+                <div>
+                    <img
+                        src="https://cdn.discordapp.com/attachments/928140330124062750/957338495469355138/IMG_8255.jpg"
+                        height="150px"
+                        width="150px"
+                        style="
+                            border-radius: 25px;
+                            object-fit: cover;
+                            object-position: 0% 20%;
+                        "
+                    />
+                </div>
+                <div>
+                    <img
+                        src="https://pbs.twimg.com/media/EncOZAcW8AMJMpC?format=jpg&name=4096x4096"
+                        height="150px"
+                        width="150px"
+                        style="
+                            border-radius: 25px;
+                            object-fit: cover;
+                            object-position: 0% 40%;
+                        "
+                    />
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="https://cdn.donmai.us/sample/bc/e4/__keqing_and_keqing_genshin_impact_drawn_by_pdxen__sample-bce469a9f6262cb0a42a874a9999838d.jpg" height="150px" width="150px" style="border-radius:25px;object-fit:cover;object-position: 0% 10%;">
-        </div>
-        <div>
-            <img src="tsukiko2.png" height="150px" width="150px" style="border-radius:25px;object-fit:cover;object-position: 0% 10%;">
-        </div>
-        <div>
-            <img src="https://cdn.donmai.us/sample/15/43/__keqing_and_keqing_genshin_impact_drawn_by_doham__sample-154333d543f9cbb184e1df356296935a.jpg" height="150px" width="150px" style="border-radius:25px;object-fit:cover;object-position: 0% 10%;">
-        </div>
-        <div>
-            <img src="https://cdn.discordapp.com/attachments/928140330124062750/957338495469355138/IMG_8255.jpg" height="150px" width="150px" style="border-radius:25px;object-fit:cover;object-position: 0% 20%;">
-        </div>
-        <div>
-            <img src="https://pbs.twimg.com/media/EncOZAcW8AMJMpC?format=jpg&name=4096x4096" height="150px" width="150px" style="border-radius:25px;object-fit:cover;object-position: 0% 40%;">
-        </div>
-    </div>
-    </div>
-<script>
-    function Discord() {
-        location.href = `https://www.youtube.com/channel/UCZYswk4AUEM6ywq2GuRbXwA`;
-    }
-    function goup() {
-        let mainel = document.getElementById("goingup");
-        mainel.style.top = "40%";
-        mainel.style.transition = "0.3s";
-    }
-    function goup2() {
-        let mainel = document.getElementById("goingup");
-        mainel.style.top = "30%";
-        mainel.style.transition = "0.3s";
-    }
-    function likesfade() {
-        let mainel = document.getElementById("goingup");
-        let likesel = document.getElementById("likes");
-        let photosel = document.getElementById("photos");
-        likesel.style.opacity = "1";
-        likesel.style.transition = "0.3s";
-        photosel.style.opacity = "0";
-        photosel.style.transition = "0.3s";
-        likesel.style.zIndex = "1";
-        photosel.style.zIndex = "0";
-        mainel.style.zIndex = "0";
-    }
-    function photosfade() {
-        let mainel = document.getElementById("goingup");
-        let photosel = document.getElementById("photos");
-        let likesel = document.getElementById("likes");
-        photosel.style.opacity = "1";
-        photosel.style.transition = "0.3s";
-        likesel.style.opacity = "0";
-        likesel.style.transition = "0.3s";
-        likesel.style.zIndex = "0";
-        photosel.style.zIndex = "1";
-        mainel.style.zIndex = "0";
-    }
-    function Return() {
-        let mainel = document.getElementById("goingup");
-        let likesel = document.getElementById("likes");
-        let photosel = document.getElementById("photos");
-        mainel.style.top = "50%";
-        mainel.style.transition = "0.3s";
-        likesel.style.opacity = "0";
-        likesel.style.transition = "0.3s";
-        photosel.style.opacity = "0";
-        photosel.style.transition = "0.3s";
-        likesel.style.zIndex = "0";
-        photosel.style.zIndex = "0";
-        mainel.style.zIndex = "1";
-    } //yes
-</script>
-</body>
+        <script>
+            function Discord() {
+                location.href = `https://www.youtube.com/channel/UCZYswk4AUEM6ywq2GuRbXwA`;
+            }
+            function goup() {
+                let mainel = document.getElementById("goingup");
+                mainel.style.top = "40%";
+                mainel.style.transition = "0.3s";
+            }
+            function goup2() {
+                let mainel = document.getElementById("goingup");
+                mainel.style.top = "30%";
+                mainel.style.transition = "0.3s";
+            }
+            function likesfade() {
+                let mainel = document.getElementById("goingup");
+                let likesel = document.getElementById("likes");
+                let photosel = document.getElementById("photos");
+                likesel.style.opacity = "1";
+                likesel.style.transition = "0.3s";
+                photosel.style.opacity = "0";
+                photosel.style.transition = "0.3s";
+                likesel.style.zIndex = "1";
+                photosel.style.zIndex = "0";
+                mainel.style.zIndex = "0";
+            }
+            function photosfade() {
+                let mainel = document.getElementById("goingup");
+                let photosel = document.getElementById("photos");
+                let likesel = document.getElementById("likes");
+                photosel.style.opacity = "1";
+                photosel.style.transition = "0.3s";
+                likesel.style.opacity = "0";
+                likesel.style.transition = "0.3s";
+                likesel.style.zIndex = "0";
+                photosel.style.zIndex = "1";
+                mainel.style.zIndex = "0";
+            }
+            function Return() {
+                let mainel = document.getElementById("goingup");
+                let likesel = document.getElementById("likes");
+                let photosel = document.getElementById("photos");
+                mainel.style.top = "50%";
+                mainel.style.transition = "0.3s";
+                likesel.style.opacity = "0";
+                likesel.style.transition = "0.3s";
+                photosel.style.opacity = "0";
+                photosel.style.transition = "0.3s";
+                likesel.style.zIndex = "0";
+                photosel.style.zIndex = "0";
+                mainel.style.zIndex = "1";
+            } //yes
+        </script>
+    </body>
 </html>
